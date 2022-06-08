@@ -1,0 +1,27 @@
+.hero {
+  background: var(--bc-footcl);
+  padding: 200px 0;
+}
+.hero__title {
+  max-width: 650px;
+  text-align: center;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--white-cl);
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-right: auto;
+}
+.hero--bc-image {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bc/bc-home.svg);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

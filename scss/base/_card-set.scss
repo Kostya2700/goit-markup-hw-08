@@ -1,0 +1,13 @@
+.project__card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-prf));
+  margin-top: calc(-1 * var(--card-prf));
+}
+.project__item {
+  margin-top: var(--card-prf);
+  margin-left: var(--card-prf);
+  flex-basis: calc(100% / 3 calc(-1 * var(--card-prf)));
+  width: 370px;
+  border: 1px solid var(--border-project);
+}

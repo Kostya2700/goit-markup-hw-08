@@ -1,0 +1,104 @@
+.header--active-page {
+  border-bottom: 1px solid var(--border-header);}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__link-logo {
+  font-family: var(--logo-font);
+  font-size: 26px;
+  color: var(--logo-cl);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  text-decoration: none;
+}
+.header__link-logo-span {
+  font-family: var(--logo-font);
+  font-size: 26px;
+  color: var(--black-cl);
+}
+/* Навігація сайту*/
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+.navigation__item {
+  margin-right: 50px;
+}
+.navigation__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--brand-color);
+  padding: 32px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-cl);
+  }
+}
+.navigation__link--active-page {
+  color: var(--logo-cl);
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--logo-cl);
+    border-radius: 2px;
+  }
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.contacts__icon {
+  fill: var(--grey-cl);
+  margin-right: 10px;
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--logo-cl);
+  }
+}
+.contacts__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--roboto-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--grey-cl);
+  padding: 32px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-cl);
+  }
+}

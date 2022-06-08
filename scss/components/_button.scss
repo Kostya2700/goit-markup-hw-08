@@ -1,0 +1,115 @@
+.hero__btn {
+  display: block;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--logo-cl);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--whiteF-cl);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--whiteF-cl);
+    background: var(--btn-cl);
+  }
+}
+.icon-btn {
+  fill: var(--black-cl);
+}
+.modal-form__btn-modul {
+  display: block;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--logo-cl);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--whiteF-cl);
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px;
+  border: none;
+  box-shadow: 0px 4px 4px var(--border-team);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--whiteF-cl);
+    background: var(--btn-cl);
+  }
+}
+.subscription__btn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--logo-cl);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--whiteF-cl);
+  padding: 10px 29px;
+  margin-left: 12px;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscription__btn-icon {
+  fill: var(--white-cl);
+  margin-left: 10px;
+}
+.portfolio__btn {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: var(--btnbc);
+  padding: 6px 22px;
+  box-shadow: 0px 4px 4px var(--border-team);
+  transition-property: background-color color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: var(--logo-cl);
+    color: var(--whiteF-cl);
+  }
+}
+// не можу вкласти в .portfolio__btn--active
+.portfolio__list-btn .portfolio__btn--active {
+  color: var(--whiteF-cl);
+  background-color: var(--logo-cl);
+}
+.portfolio__list-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.portfolio__item-btn {
+  margin-right: 8px;
+}

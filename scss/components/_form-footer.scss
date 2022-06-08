@@ -1,0 +1,29 @@
+
+.subscription {
+    margin-left: 93px;
+    padding-top: 12px;
+  }
+  .subscription__title {
+    font-style: var(--roboto-font);
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: 14px;
+    color: var(--white-cl);
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+  }
+  
+  .subscription__list {
+    display: flex;
+  }
+  
+  .subscription__input {
+    width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: #ffffff;
+    outline: transparent;
+  }

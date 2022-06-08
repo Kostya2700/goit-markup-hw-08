@@ -1,0 +1,35 @@
+.team__social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team__social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.team__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-cl);
+  border-radius: 50%;
+  transition-property: color background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--logo-cl);
+  }
+}
+
+
+.team__svg-icon{
+.team__social-link:hover &,
+.team__social-link:focus & {
+  fill: var(--white-cl);
+}
+}

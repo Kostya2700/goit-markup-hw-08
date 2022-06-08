@@ -1,0 +1,44 @@
+.specifics {
+  padding-bottom: 0;
+}
+.specifics__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bcteam);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.specifics__list {
+  display: flex;
+  align-items: center;
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.specifics__item {
+  max-width: 270px;
+  margin-right: 30px;
+
+  &:last-child {
+  margin-right: 0;
+}
+}
+
+.specifics__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.specifics__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--grey-cl);
+}
