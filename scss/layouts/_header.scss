@@ -4,6 +4,9 @@
 .header__container {
   display: flex;
   align-items: center;
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  // }
 }
 .header__link-logo {
   font-family: var(--logo-font);

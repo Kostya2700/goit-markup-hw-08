@@ -1,44 +1,101 @@
-.specifics {
-  padding-bottom: 0;
-}
-.specifics__icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--bcteam);
-  border-radius: 4px;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-}
-.specifics__list {
-  display: flex;
-  align-items: center;
-  width: 1170px;
-  margin: 0 auto;
-  padding-left: 0;
-}
+// .specifics {
+//   padding-bottom: 0;
+// }
+// .specifics__list {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   width: 1170px;
+//   margin: 0 auto;
+//   padding-left: 0;
+//   @media screen and(min-width: 480px){
+//     width: 450px;
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
+// .specifics__icon-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: var(--bcteam);
+//   border-radius: 4px;
+//   width: 270px;
+//   height: 120px;
+//   margin-bottom: 30px;
 
-.specifics__item {
-  max-width: 270px;
-  margin-right: 30px;
+//   @media screen and (min-width: 480px) {
+//     display:flex;
+//     flex-direction: column;
+//     width: 450px;
+//   }
+// }
 
-  &:last-child {
-  margin-right: 0;
-}
-}
+// .specifics__item {
+//   max-width: 270px;
+//   margin-right: 30px;
+
+//   &:last-child {
+//   margin-right: 0;
+// }
+// }
 
 .specifics__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
 }
 .specifics__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-cl);
+}
+.specifics__list {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.specifics__item {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+.specifics__item:not(:last-child) {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
+}
+.specifics__icon-container {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: auto;
+    padding-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bcteam);
+    margin-bottom: 30px;
+  }
+  
 }

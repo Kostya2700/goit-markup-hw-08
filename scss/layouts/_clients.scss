@@ -7,6 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 .clients__icon {
   fill: var(--clientc);
@@ -29,13 +36,21 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+margin-bottom: 30px;
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   &:hover,
   &:focus {
     border: 1px solid var(--logo-cl);
     cursor: pointer;
+
+    @media screen and (min-width: 480px) {
+      width: 210px;
+      
+      display: block;
+      margin-bottom: 30px;
+    
+    }
   }
 }

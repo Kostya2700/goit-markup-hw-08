@@ -8,9 +8,14 @@
 }
 .team__list {
   display: flex;
+  @media screen and (min-width:480px){
+    display: flex;
+    flex-direction: column;
+
+  }
 }
 .team__item {
-  margin-right: 30px;
+  
   background-color: var(--white-cl);
   border-radius: 4px;
   box-shadow: 0 4px 4px var(--border-team);
@@ -39,4 +44,12 @@
 }
 .team__svg-icon {
   fill: var(--color-icon);
+}
+.team_img{
+  @media screen and(min-width:480px){
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    margin: o auto;
+  }
 }
