@@ -17,8 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css"/>
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Веб студия</title>
   </head>
 
@@ -29,7 +29,7 @@
         <a class="header__link-logo" href="./index.html" lang="en">
           Web<span class="header__link-logo-span">Studio</span></a
         >
-         <button
+        <button
           class="header-menu__btn"
           type="button"
           aria-expanded="true"
@@ -48,38 +48,40 @@
         </button>
         <div class="header-menu" id="menu-container" data-menu>
           <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="./index.html">Студия</a>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--active-page" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!--Контакты-->
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link-mail" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icon/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--active-page" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="">Контакты</a>
+            <li class="contacts__item">
+              <a class="contacts__link-tel" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icon/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!--Контакты-->
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link-mail" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icon/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link-tel" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icon/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-        <ul class="header-menu__socials">
+          <ul class="header-menu__socials">
             <li class="header-menu__item">
               <a
                 href=""
@@ -127,9 +129,10 @@
     <!--Портфолио-->
     <main class="main-portfolio">
       <section class="section portfolio">
+        
         <!--Прихований заголовок-->
         <div class="container">
-          <h1 hidden>Проекти</h1>
+          <h1 class="visually-hidden">Проекти</h1>
           <ul class="portfolio__list-btn">
             <li class="portfolio__item-btn">
               <button class="btn portfolio__btn portfolio__btn--active" type="button">Все</button>
@@ -147,163 +150,314 @@
               <button class="btn portfolio__btn" type="button">Маркетинг</button>
             </li>
           </ul>
-        </div>
         <!--Проекти-->
-        <div class="container project">
           <ul class="project__card-set">
+            <li class="project__item">
+              <article class="project__card">
+                <div class="project__card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-370w.jpg    1x,
+                        ./images/portfolio/project1-370w-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-354w.jpg    1x,
+                        ./images/portfolio/project1-354w-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project1-450w.jpg    1x,
+                        ./images/portfolio/project1-450w-2x.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpg"
+                    />
+
+                    <img src="./images/portfolio/project1-370w.jpg" alt="презентация сайта" />
+                  </picture>
+                  
+                    <p class="project__text-overlay">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
+                      о компании или частном лице.
+                    </p>
+                  
+                </div>
+                <div class="project__card-content">
+                  <h2 class="project__title">Технокряк</h2>
+                  <p class="project__text">Веб-сайт</p>
+                </div>
+              </article>
+            </li>
+            <li class="project__item">
+              <article class="project__card">
+                <div class="project__card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-370w.jpg    1x,
+                        ./images/portfolio/project2-370w-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-354w.jpg    1x,
+                        ./images/portfolio/project2-354w-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project2-450w.jpg    1x,
+                        ./images/portfolio/project2-450w-2x.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpg"
+                    />
+
+                    <img src="./images/portfolio/project2-370w.jpg" alt="презентация постера" />
+                  </picture>
+                  
+                    <p class="project__text-overlay">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
+                      о компании или частном лице.
+                    </p>
+                  
+                </div>
+                <div class="project__card-content">
+                  <h2 class="project__title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="project__text">Дизайн</p>
+                </div>
+              </article>
+            </li>
             <li class="project__item">
               <article class="project__card">
                 <div class="project__card-thumb">
                    <picture>
                     <source 
-                    srcset="./images/portfolio/project1-370w.jpg 1x, ./images/portfolio/project1-370w-2x.jpg 2x " 
+                    srcset="./images/portfolio/project3-370w.jpg 1x, ./images/portfolio/project3-370w-2x.jpg 2x " 
                     media="(min-width: 1200px)" type="image/jpg"/>
                     <source 
-                    srcset="./images/portfolio/project1-354w.jpg 1x, ./images/portfolio/project1-354w-2x.jpg 2x" 
+                    srcset="./images/portfolio/project3-354w.jpg 1x, ./images/portfolio/project3-354w-2x.jpg 2x" 
                     media="(min-width: 768px)" type="image/jpg"/>
                     <source 
-                    srcset="./images/portfolio/project1-450w.jpg 1x, ./images/portfolio/project1-450w-2x.jpg 2x" 
+                    srcset="./images/portfolio/project3-450w.jpg 1x, ./images/portfolio/project3-450w-2x.jpg 2x" 
                     media="(max-width: 767.98px)" type="image/jpg"/>
-
-                    <img src="./images/portfolio/project1-370w.jpg"
-                    alt="презентация сайта" />
+                   
+                    <img src="./images/portfolio/project3-370w.jpg"
+                    alt="презентация мобильного приложения" />
                   </picture>
-                   <div class="project__overlay">
-                    <p class="project__text-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения <br> о компании или частном лице.</p>
-                   </div>
-                </div>
-                <div class="project__card-content">
-                  <h2 class="project__title">Технокряк</h2>
-                <p class="project__text">Веб-сайт</p>
-                </div>
-              </article>
-            </li>
-            <li class="project__item">
-              <article class="project__card">
-                <div class="project__card-thumb">
-                   <img class="project__img" src="./images/portfolio/basket.jpg" alt="Баскетбол" width="370" height="294" />
-                   <div class="project__overlay">
-                    <p class="project__text-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения <br> о компании или частном лице.</p>
-                   </div>
-                </div>
-                <div class="project__card-content">
-                  <h2 class="project__title">
-                  Постер <span lang="en">New Orlean vs Golden Star</span>
-                </h2>
-                <p class="project__text">Дизайн</p>
-                </div>
-              </article>
-            </li>
-            <li class="project__item">
-              <article class="project__card">
-                <div class="project__card-thumb">
-                    <img class="project__img" src="./images/portfolio/fish.jpg" alt="Риба" width="370" height="294" />
-                    <div class="project__overlay">
-                      <p class="project__text-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения <br> о компании или частном лице.</p>
-                     </div>
-
+                  
+                    <p class="project__text-overlay">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
+                      о компании или частном лице.
+                    </p>
+                  
                 </div>
                 <div class="project__card-content">
                   <h2 class="project__title" lang="en">Ресторан Seafood</h2>
-                <p class="project__text">Приложение</p>
+                  <p class="project__text">Приложение</p>
                 </div>
               </article>
             </li>
             <li class="project__item">
               <article class="project__card">
                 <div class="project__card-thumb">
-                  <img class="project__img"
-                  src="./images/portfolio/headphone.jpg"
-                  alt="Наушники"
-                  width="370"
-                  height="294"
-                />
-                <div class="project__overlay">
-                  <p class="project__text-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения <br> о компании или частном лице.</p>
-                 </div>
+                   <picture>
+                    <source 
+                    srcset="./images/portfolio/project4-370w.jpg 1x, ./images/portfolio/project4-370w-2x.jpg 2x " 
+                    media="(min-width: 1200px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project4-354w.jpg 1x, ./images/portfolio/project4-354w-2x.jpg 2x" 
+                    media="(min-width: 768px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project4-450w.jpg 1x, ./images/portfolio/project4-450w-2x.jpg 2x" 
+                    media="(max-width: 767.98px)" type="image/jpg"/>
+                   
+                    <img src="./images/portfolio/project4-370w.jpg"
+                    alt="презентация маркетинга" />
+                  </picture>
+                  
+                    <p class="project__text-overlay">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
+                      о компании или частном лице.
+                    </p>
+                  
                 </div>
                 <div class="project__card-content">
                   <h2 class="project__title" lang="en">Проект Prime</h2>
-                <p class="project__text">Маркетинг</p>
+                  <p class="project__text">Маркетинг</p>
                 </div>
               </article>
             </li>
             <li class="project__item">
               <article class="project__card">
                 <div class="project__card-thumb">
-                   <img class="project__img" src="./images/portfolio/box.jpg" alt="Ящики" width="370" height="294" />
-                   <div class="project__overlay">
-                    <p class="project__text-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения <br> о компании или частном лице.</p>
-                   </div>
-
+                  <picture>
+                    <source 
+                    srcset="./images/portfolio/project5-370w.jpg 1x, ./images/portfolio/project5-370w-2x.jpg 2x " 
+                    media="(min-width: 1200px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project5-354w.jpg 1x, ./images/portfolio/project5-354w-2x.jpg 2x" 
+                    media="(min-width: 768px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project5-450w.jpg 1x, ./images/portfolio/project5-450w-2x.jpg 2x" 
+                    media="(max-width: 767.98px)" type="image/jpg"/>
+                   
+                    <img src="./images/portfolio/project5-370w.jpg"
+                    alt="презентация мобильного приложения" />
+                  </picture>
+                  
+                    <p class="project__text-overlay">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
+                      о компании или частном лице.
+                    </p>
+                  
                 </div>
                 <div class="project__card-content">
                   <h2 class="project__title" lang="en">Проект Boxes</h2>
-                <p class="project__text">Приложение</p>
-                </div>
-              </article>
-            </li>
-            <li class="project__item">
-              <article class="project__card">
-               <div class="project__card-thumb">
-                  <img class="project__img"
-                  src="./images/portfolio/screen.jpg"
-                  alt="Екран компьютера"
-                  width="370"
-                  height="294"
-                />
-                <div class="project__overlay">
-                  <p class="project__text-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения <br> о компании или частном лице.</p>
-                 </div>
-               </div>
-                <div class="project__card-content">
-                  <h2 class="project__title" lang="en">Inspiration has no Borders</h2>
-                <p class="project__text">Веб-сайт</p>
+                  <p class="project__text">Приложение</p>
                 </div>
               </article>
             </li>
             <li class="project__item">
               <article class="project__card">
                 <div class="project__card-thumb">
-                    <img class="project__img" src="./images/portfolio/book.jpg" alt="Книжка" width="370" height="294" />
-                    <div class="project__overlay">
-                      <p class="project__text-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения <br> о компании или частном лице.</p>
-                     </div>
-
+                 <picture>
+                    <source 
+                    srcset="./images/portfolio/project6-370w.jpg 1x, ./images/portfolio/project6-370w-2x.jpg 2x " 
+                    media="(min-width: 1200px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project6-354w.jpg 1x, ./images/portfolio/project6-354w-2x.jpg 2x" 
+                    media="(min-width: 768px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project6-450w.jpg 1x, ./images/portfolio/project6-450w-2x.jpg 2x" 
+                    media="(max-width: 767.98px)" type="image/jpg"/>
+                   
+                    <img src="./images/portfolio/project6-370w.jpg"
+                    alt="презентация сайта" />
+                  </picture>
+                  
+                    <p class="project__text-overlay">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
+                      о компании или частном лице.
+                    </p>
+                  
+                </div>
+                <div class="project__card-content">
+                  <h2 class="project__title" lang="en">Inspiration has no Borders</h2>
+                  <p class="project__text">Веб-сайт</p>
+                </div>
+              </article>
+            </li>
+            <li class="project__item">
+              <article class="project__card">
+                <div class="project__card-thumb">
+                   <picture>
+                    <source 
+                    srcset="./images/portfolio/project7-370w.jpg 1x, ./images/portfolio/project7-370w-2x.jpg 2x " 
+                    media="(min-width: 1200px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project7-354w.jpg 1x, ./images/portfolio/project7-354w-2x.jpg 2x" 
+                    media="(min-width: 768px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project7-450w.jpg 1x, ./images/portfolio/project7-450w-2x.jpg 2x" 
+                    media="(max-width: 767.98px)" type="image/jpg"/>
+                   
+                    <img src="./images/portfolio/project7-370w.jpg"
+                    alt="презентация дизайна" />
+                  </picture>
+                  
+                    <p class="project__text-overlay">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
+                      о компании или частном лице.
+                    </p>
+                  
                 </div>
                 <div class="project__card-content">
                   <h2 class="project__title" lang="en">Издание Limited Edition</h2>
-                <p class="project__text">Дизайн</p>
+                  <p class="project__text">Дизайн</p>
                 </div>
               </article>
             </li>
             <li class="project__item">
               <article class="project__card">
                 <div class="project__card-thumb">
-                    <img class="project__img" src="./images/portfolio/label.jpg" alt="Бирка" width="370" height="294" />
-                    <div class="project__overlay">
-                      <p class="project__text-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения <br> о компании или частном лице.</p>
-                     </div>
-
+                 <picture>
+                    <source 
+                    srcset="./images/portfolio/project8-370w.jpg 1x, ./images/portfolio/project8-370w-2x.jpg 2x " 
+                    media="(min-width: 1200px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project8-354w.jpg 1x, ./images/portfolio/project8-354w-2x.jpg 2x" 
+                    media="(min-width: 768px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project8-450w.jpg 1x, ./images/portfolio/project8-450w-2x.jpg 2x" 
+                    media="(max-width: 767.98px)" type="image/jpg"/>
+                   
+                    <img src="./images/portfolio/project8-370w.jpg"
+                    alt="презентация маркетинга" />
+                  </picture>
+                  
+                    <p class="project__text-overlay">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
+                      о компании или частном лице.
+                    </p>
+                  
                 </div>
                 <div class="project__card-content">
                   <h2 class="project__title" lang="en">Проект LAB</h2>
-                <p class="project__text">Маркетинг</p>
+                  <p class="project__text">Маркетинг</p>
                 </div>
               </article>
             </li>
             <li class="project__item">
               <article class="project__card">
                 <div class="project__card-thumb">
-                    <img class="project__img" src="./images/portfolio/notebook.jpg" alt="Ноутбук" width="370" height="294" />
-                    <div class="project__overlay">
-                      <p class="project__text-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения <br> о компании или частном лице.</p>
-                     </div>
-
+                    <picture>
+                    <source 
+                    srcset="./images/portfolio/project9-370w.jpg 1x, ./images/portfolio/project9-370w-2x.jpg 2x " 
+                    media="(min-width: 1200px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project9-354w.jpg 1x, ./images/portfolio/project9-354w-2x.jpg 2x" 
+                    media="(min-width: 768px)" type="image/jpg"/>
+                    <source 
+                    srcset="./images/portfolio/project9-450w.jpg 1x, ./images/portfolio/project9-450w-2x.jpg 2x" 
+                    media="(max-width: 767.98px)" type="image/jpg"/>
+                   
+                    <img src="./images/portfolio/project9-370w.jpg"
+                    alt="презентация мобильного приложения" />
+                  </picture>
+                  
+                    <p class="project__text-overlay">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
+                      о компании или частном лице.
+                    </p>
+                  
                 </div>
                 <div class="project__card-content">
                   <h2 class="project__title" lang="en">Growing Business</h2>
-                <p class="project__text">Приложение</p>
+                  <p class="project__text">Приложение</p>
                 </div>
               </article>
             </li>
@@ -384,4 +538,3 @@
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
-
