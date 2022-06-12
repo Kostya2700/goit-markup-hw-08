@@ -104,12 +104,27 @@
   background-color: var(--logo-cl);
 }
 .portfolio__list-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $width-min-tablet) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @media screen and (min-width: $width-min-desktop) {
+        margin-bottom: 50px;
+    }
 }
 
-.portfolio__item-btn {
-  margin-right: 8px;
+.portfolio__item-btn:not(:nth-last-child(-n + 2)) {
+    @media screen and (max-width: $width-max-mobile) {
+        margin-bottom: 15px;
+    }
 }
+
+.portfolio__item-btn:not(:last-child) {
+    margin-right: 8px;
+}
+
