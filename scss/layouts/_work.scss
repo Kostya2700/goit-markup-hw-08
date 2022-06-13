@@ -26,13 +26,13 @@
   width: 100%;
   bottom: 0;
   left: 0;
-  font-family: var(--roboto-font);
+  font-family: $primary-white-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
   text-align: center;
   padding: 27px 82px;
   color: var(--whiteF-cl);
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: $service-overlay-bgc;
   letter-spacing: 0.03em;
 }

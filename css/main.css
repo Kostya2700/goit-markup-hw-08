@@ -497,10 +497,10 @@ ul, ol {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  background: var(--btnbc);
+  background: #f5f4fa;
   padding: 6px 22px;
-  -webkit-box-shadow: 0px 4px 4px var(--border-team);
-          box-shadow: 0px 4px 4px var(--border-team);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   -webkit-transition-property: background-color color;
   transition-property: background-color color;
   -webkit-transition-duration: 250ms;
@@ -563,7 +563,7 @@ ul, ol {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 10;
   -webkit-transition: opacity visibility;
   transition: opacity visibility;
@@ -695,15 +695,15 @@ ul, ol {
 }
 
 .modal-form__icon {
-  fill: var(--brand-color);
+  fill: #212121;
 }
 
 .modal-form__label:hover > .modal-form__icon {
-  fill: var(--logo-cl);
+  fill: #2196f3;
 }
 
 .modal-form__input:focus + .modal-form__icon {
-  fill: var(--logo-cl);
+  fill: #2196f3;
 }
 
 .modal-form__input {
@@ -755,47 +755,47 @@ ul, ol {
 }
 
 .modal-form__textarea:hover, .modal-form__textarea:focus {
-  border: 1px solid var(--logo-cl);
+  border: 1px solid #2196f3;
 }
 
 .modal-form__textarea::-webkit-input-placeholder {
-  font-family: var(--roboto-font);
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--rgba-textarea);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-form__textarea:-ms-input-placeholder {
-  font-family: var(--roboto-font);
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--rgba-textarea);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-form__textarea::-ms-input-placeholder {
-  font-family: var(--roboto-font);
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--rgba-textarea);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-form__textarea::placeholder {
-  font-family: var(--roboto-font);
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--rgba-textarea);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-checkbox {
@@ -831,7 +831,7 @@ ul, ol {
 }
 
 .modal-form__link-modul {
-  color: var(--logo-cl);
+  color: #2196f3;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
@@ -843,12 +843,12 @@ ul, ol {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-family: var(--roboto-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--grey-cl);
+  color: #757575;
   margin-bottom: 4px;
 }
 
@@ -856,7 +856,7 @@ ul, ol {
   position: relative;
   display: block;
   margin-bottom: 10px;
-  color: var(--grey-cl);
+  color: #757575;
 }
 
 .modal-form__icon {
@@ -877,7 +877,7 @@ ul, ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  outline: 2px solid var(--black-cl);
+  outline: 2px solid #000000;
   outline-offset: -2px;
   border-radius: 4px;
   -webkit-transition: background-color, outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -886,24 +886,24 @@ ul, ol {
 }
 
 .modal-form__input-checkbox:checked + .modal-form__custom-checkbox {
-  outline: var(--logo-cl);
-  background-color: var(--logo-cl);
+  outline: #2196f3;
+  background-color: #2196f3;
 }
 
 .modal-form__checkbox-icon {
   opacity: 0;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--whiteF-cl);
+  fill: #ffffff;
 }
 
 .modal-form__input-checkbox:checked + .modal-form__custom-checkbox .modal-form__checkbox-icon {
   opacity: 1;
-  fill: var(--whiteF-cl);
+  fill: #ffffff;
 }
 
 .modal-form__checkbox-form {
-  color: var(--grey-cl);
+  color: #757575;
 }
 
 .team__social-list {
@@ -934,7 +934,7 @@ ul, ol {
           align-items: center;
   width: 44px;
   height: 44px;
-  background-color: var(--white-cl);
+  background-color: #ffffff;
   border-radius: 50%;
   -webkit-transition-property: color background-color;
   transition-property: color background-color;
@@ -945,12 +945,12 @@ ul, ol {
 }
 
 .team__social-link:hover, .team__social-link:focus {
-  background-color: var(--logo-cl);
+  background-color: #2196f3;
 }
 
 .team__social-link:hover .team__svg-icon,
 .team__social-link:focus .team__svg-icon {
-  fill: var(--white-cl);
+  fill: #ffffff;
 }
 
 .subscription {
@@ -967,11 +967,11 @@ ul, ol {
 }
 
 .subscription__title {
-  font-style: var(--roboto-font);
+  font-style: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1.14;
   font-size: 14px;
-  color: var(--white-cl);
+  color: #ffffff;
   margin-bottom: 20px;
   letter-spacing: 0.03em;
 }
@@ -1055,7 +1055,7 @@ ul, ol {
 
 @media screen and (min-width: 768px) {
   .header {
-    border-bottom: 1px solid var(--border-header);
+    border-bottom: 1px solid #ECECEC;
   }
 }
 
@@ -1130,7 +1130,7 @@ ul, ol {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  padding: 40px 48px;
+  padding: 48px 40px;
   z-index: 1;
 }
 
@@ -1168,7 +1168,7 @@ ul, ol {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
-  color: var(--logo-cl);
+  color: #2196f3;
   display: inline-block;
   padding-top: 26px;
   padding-bottom: 16px;
@@ -1199,9 +1199,9 @@ ul, ol {
 }
 
 .header__link-logo-span {
-  font-family: var(--logo-font);
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
-  color: var(--black-cl);
+  color: #000000;
 }
 
 .header-menu__btn {
@@ -1220,7 +1220,7 @@ ul, ol {
   padding: 0;
   width: 40px;
   height: 40px;
-  background-color: #ffff;
+  background-color: #ffffff;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -1264,7 +1264,7 @@ ul, ol {
 }
 
 .navigation__link {
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   color: #212121;
   font-weight: 500;
@@ -1290,7 +1290,7 @@ ul, ol {
 }
 
 .navigation__link--active-page {
-  color: var(--logo-cl);
+  color: #2196f3;
   position: relative;
 }
 
@@ -1713,7 +1713,7 @@ ul, ol {
   width: 100%;
   bottom: 0;
   left: 0;
-  font-family: var(--roboto-font);
+  font-family: #ffffff;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -1725,7 +1725,7 @@ ul, ol {
 }
 
 .team {
-  background-color: var(--bcteam);
+  background-color: #f5f4fa;
 }
 
 .team__title {
@@ -1811,12 +1811,12 @@ ul, ol {
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
-  color: var(--grey-cl);
+  color: #757575;
   margin-bottom: 16px;
 }
 
 .team__svg-icon {
-  fill: var(--color-icon);
+  fill: #AFB1B8;
 }
 
 @media screen and (min-width: 480px) {
@@ -1848,12 +1848,12 @@ ul, ol {
 }
 
 .clients__icon {
-  fill: var(--clientc);
+  fill: #AFB1B8;
 }
 
 .clients__item:hover .clients__icon,
 .clients__item:focus .clients__icon {
-  fill: var(--logo-cl);
+  fill: #2196f3;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -1896,7 +1896,7 @@ ul, ol {
 }
 
 .clients__item:hover, .clients__item:focus {
-  outline: 1px solid var(--logo-cl);
+  outline: 1px solid #2196f3;
 }
 
 .footer {
@@ -1949,16 +1949,16 @@ ul, ol {
 
 .footer__logo {
   display: block;
-  color: var(--logo-cl);
+  color: #2196f3;
   padding-bottom: 20px;
   text-decoration: none;
-  font-family: var(--logo-font);
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   text-decoration: none;
 }
 
 .footer__logo-span {
-  color: var(--white-cl);
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -1976,7 +1976,7 @@ ul, ol {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--white-cl);
+  color: #ffffff;
   font-style: normal;
 }
 
@@ -1986,7 +1986,7 @@ ul, ol {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--grey-cl);
+  color: #757575;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -1996,7 +1996,7 @@ ul, ol {
 }
 
 .address__link:hover, .address__link:focus {
-  color: var(--logo-cl);
+  color: #2196f3;
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -2011,11 +2011,11 @@ ul, ol {
 
 .join__title {
   display: block;
-  font-style: var(--roboto-font);
+  font-style: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1.14;
   font-size: 14px;
-  color: var(--white-cl);
+  color: #ffffff;
   margin-bottom: 20px;
   letter-spacing: 0.03em;
 }
@@ -2060,7 +2060,7 @@ ul, ol {
 }
 
 .join__link:hover, .join__link:focus {
-  background-color: var(--logo-cl);
+  background-color: #2196f3;
 }
 
 .join__item:not(:last-child) {
@@ -2068,7 +2068,7 @@ ul, ol {
 }
 
 .join__icon {
-  fill: var(--white-cl);
+  fill: #ffffff;
 }
 
 @media screen and (min-width: 768px) {

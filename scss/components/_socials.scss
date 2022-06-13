@@ -14,7 +14,7 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: var(--white-cl);
+  background-color: $primary-bgc;
   border-radius: 50%;
   transition-property: color background-color;
   transition-duration: 250ms;
@@ -22,7 +22,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--logo-cl);
+    background-color: $accent-color;
   }
 }
 
@@ -30,6 +30,6 @@
 .team__svg-icon{
 .team__social-link:hover &,
 .team__social-link:focus & {
-  fill: var(--white-cl);
+  fill: $primary-bgc;
 }
 }

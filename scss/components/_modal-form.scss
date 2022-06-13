@@ -5,11 +5,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: $backdrop-bgc;
   z-index: 10;
   transition: opacity visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -102,12 +102,12 @@
   transition: color $duration $timing-function;
 }
 .modal-form__icon {
-  fill: var(--brand-color);
+  fill: $title-color;
   .modal-form__label:hover > & {
-    fill: var(--logo-cl);
+    fill: $accent-color;
   }
   .modal-form__input:focus + & {
-    fill: var(--logo-cl);
+    fill: $accent-color;
   }
 }
 .modal-form__input {
@@ -147,16 +147,16 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    border: 1px solid var(--logo-cl);
+    border: 1px solid $accent-color;
   }
   &::placeholder {
-    font-family: var(--roboto-font);
+    font-family: $font-family;
     font-size: 14px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
-    color: var(--rgba-textarea);
+    color: $placeholder-color;
   }
 }
 .modal-checkbox {
@@ -179,25 +179,25 @@
   }
 }
 .modal-form__link-modul {
-  color: var(--logo-cl);
+  color: $accent-color;
   text-decoration-line: underline;
 }
 .modal-form__span {
   display: flex;
   justify-content: flex-start;
-  font-family: var(--roboto-font);
+  font-family: $font-family;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--grey-cl);
+  color: $primary-text-color;
   margin-bottom: 4px;
 }
 .modal-form__label {
   position: relative;
   display: block;
   margin-bottom: 10px;
-  color: var(--grey-cl);
+  color: $primary-text-color;
 }
 .modal-form__icon {
   position: absolute;
@@ -210,29 +210,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: 2px solid var(--black-cl);
+  outline: 2px solid $logo-text-color;
   outline-offset: -2px;
   border-radius: 4px;
   transition: background-color, outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 7px;
 
   .modal-form__input-checkbox:checked + & {
-    outline: var(--logo-cl);
-    background-color: var(--logo-cl);
+    outline: $accent-color;
+    background-color: $accent-color;
   }
 }
 
 .modal-form__checkbox-icon {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--whiteF-cl);
+  fill: $primary-bgc;
 
   .modal-form__input-checkbox:checked + .modal-form__custom-checkbox & {
     opacity: 1;
-    fill: var(--whiteF-cl);
+    fill: $primary-bgc;
   }
 }
 
 .modal-form__checkbox-form {
-  color: var(--grey-cl);
+  color: $primary-text-color;
 }

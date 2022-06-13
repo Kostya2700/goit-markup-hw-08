@@ -1,6 +1,6 @@
 .header {
     @media screen and (min-width: 768px){
-  border-bottom: 1px solid var(--border-header);}
+  border-bottom: 1px solid $header-border-color;}
     }
 .header__container {
     position: relative;
@@ -57,7 +57,7 @@
     left: 0;
     width: 100%;
     background-color: $primary-bgc;
-    padding: 40px 48px;
+    padding: 48px 40px;
     z-index: 1;
    
     @media screen and (min-width: $width-min-tablet) {
@@ -83,7 +83,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
-    color: var(--logo-cl);
+    color: $accent-color;
 
     @media screen and (min-width: $width-min-desktop) {
         font-size: 26px;
@@ -107,9 +107,9 @@
 }
 
 .header__link-logo-span {
-  font-family: var(--logo-font);
+  font-family: $logo-font;
   font-size: 26px;
-  color: var(--black-cl);
+  color: $logo-text-color;
 }
 .header-menu__btn {
     position: absolute;
@@ -121,7 +121,7 @@
     padding: 0;
     width: 40px;
     height: 40px;
-    background-color: #ffff;
+    background-color: $primary-bgc;
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -157,7 +157,7 @@
 }
 
  .navigation__link {
-    font-family: 'Roboto';
+    font-family: $font-family;
     font-style: normal;
     color: $title-color;
     font-weight: 500;
@@ -183,7 +183,7 @@
   
 
 .navigation__link--active-page {
-  color: var(--logo-cl);
+  color: $accent-color;
   position: relative;
 
   &:after {
